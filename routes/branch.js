@@ -1,0 +1,10 @@
+const express = require("express");
+const branchuserControllers = require("../controllers/branchuser.controllers");
+const employControllers = require("../controllers/branchuser.controllers");
+const router = express.Router();
+const userController = require("../controllers/branchuser.controllers");
+router.get("/getall",branchuserControllers.getAllusers);
+router.get("/getjoin",branchuserControllers.getJoinusers);
+router.get("/leftjoin",branchuserControllers.LeftJoinusers);
+router.get("/rightjoin",branchuserControllers.RightJoinusers);
+module.exports = router;
